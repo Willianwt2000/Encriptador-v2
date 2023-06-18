@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryptor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="flexbox.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&family=Poltawski+Nowy:ital@1&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+            <!-- Redes -->
+        <div class="container-redes">
+            <img class="red" src="imagenes/github.png" alt="Logo-github">
+            <img class="red" src="imagenes/linkedin-logo.png" alt="Logo-linkedin">
+        </div>
+    </header>
+    <main>
+        <!-- textareas -->
+            <div class="contenedorTextos">
+                <div class="light" id="light"></div>
+                <h1>Encriptador de texto</h1>
+                <p class="warning">Solo letras minúsculas y sin acentos</p>
+                <img class="aviso" src="imagenes/warning.png" alt="advertencia" rows="4" cols="30">
+                <textarea class="pantalla-text" name="" id="encryptar"  placeholder="Please insert text here"></textarea>
+                <textarea class="pantalla-text" name="texto" id="decrypt" placeholder="text result"></textarea><br>
+            
+            </div>
+
+            <!-- Botones -->
+        <div class="btn">
+            <button class="botones" id="encrypt-btn" onclick="encryptarTexto()">Encriptar</button>
+            <button class="botones" id="decrypt-btn" onclick="desencryptarTexto()">Desencriptar</button>
+            <button class="botones" id="copy">Copiar</button>
+        </div>
+    </main>
+<footer>
+    Created By: Willian
+</footer>
+
+</body>
+<script src="index.js"></script>
+</html>
