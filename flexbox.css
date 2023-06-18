@@ -6,15 +6,20 @@
     margin-top: 50px;
 }
 
-/* .contenedorTextos .light{
+.light{
     width: 30px;
     height: 30px;
     background-color: white;
     display: flex;
     position: absolute;
-    top: -2%;
+    top: 3%;
     left: 90%;
-} */
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
 
 .red {
     width: 20%;
@@ -40,7 +45,7 @@
 
 .contenedorTextos .aviso {
     display: flex;
-    margin: -90px 0 0 -85px;
+    margin: -90px 0 0 -65px;
     width: 25px;
 }
 
@@ -56,11 +61,13 @@
     word-wrap: break-word;
 }
 
-.pantalla-text{
+.contenedorTextos .pantalla-text{
     display: flex;
     flex-direction: column;
     width: 70%;
-    
+    font-weight: 200;
+    font-size: 20px;
+    text-align: start;
 }
 
 /* Trabajando con Botones */
