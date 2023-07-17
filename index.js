@@ -48,20 +48,20 @@ copiar.addEventListener("click", function() {
 
 // Funcion para apagar y prender luz
 
-let isNegro = false; // Variable de estado inicializada como false
+// let isNegro = false; // Variable de estado inicializada como false
 
-luz.onclick = function() {
-    if (isNegro) {
-        // Si el texto es negro, cambiar a otro color
-        luz.style.background = "white";
-        luz.style.color = "white";
-        luz.querySelector("h1").style.color = "black";
-        isNegro = false; // Actualizar la variable de estado
-    } else {
-        // Si el texto no es negro, ponerlo en negro
-        luz.style.background = "black";
-        luz.style.color = "black";
-        luz.querySelector("h1").style.color = "white";
-        isNegro = true; // Actualizar la variable de estado
-    }
-    };
+// luz.onclick = function() {
+//     if (isNegro) {
+//         // Si el texto es negro, cambiar a otro color
+//         luz.style.background = "white";
+//         luz.style.color = "white";
+//         luz.querySelector("h1").style.color = "black";
+//         isNegro = false; // Actualizar la variable de estado
+//     } else {
+//         // Si el texto no es negro, ponerlo en negro
+//         luz.style.background = "black";
+//         luz.style.color = "black";
+//         luz.querySelector("h1").style.color = "white";
+//         isNegro = true; // Actualizar la variable de estado
+//     }
+//     };

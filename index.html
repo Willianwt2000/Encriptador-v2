@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encryptor</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flexbox.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,300&family=Poltawski+Nowy:ital@1&family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <header>
@@ -17,15 +17,17 @@
         <div class="container-redes">
             <img class="red" src="imagenes/github.png" alt="Logo-github">
             <img class="red" src="imagenes/linkedin-logo.png" alt="Logo-linkedin">
+            <img class="red" src="imagenes/instagram.png" alt="Logo-linkedin">
         </div>
     </header>
-    <main>
+    <main class="caja-principal">
         <!-- textareas -->
             <div class="contenedorTextos" id="contenedorTextos">
-                <div class="light" id="light"></div>
                 <h1>Encriptador de texto</h1>
-                <p class="warning">Solo letras minúsculas y sin acentos</p>
-                <img class="aviso" src="imagenes/warning.png" alt="advertencia" rows="4" cols="30">
+                <div class="aviso-all">
+                    <p class="warning">Solo letras minúsculas y sin acentos</p>
+                    <img class="aviso" src="imagenes/danger-svgrepo-com.svg" alt="advertencia" rows="4" cols="30">
+                </div>
                 <textarea class="pantalla-text" name="" id="encryptar"  placeholder="Please insert text here"></textarea>
                 <textarea class="pantalla-text" name="texto" id="decrypt" placeholder="text result"></textarea><br>
             
@@ -33,14 +35,14 @@
 
             <!-- Botones -->
         <div class="btn">
-            <button class="botones" id="encrypt-btn" onclick="encryptarTexto()">Encriptar</button>
-            <button class="botones" id="decrypt-btn" onclick="desencryptarTexto()">Desencriptar</button>
-            <button class="botones" id="copy">Copiar</button>
+            <button class="botones" id="encrypt-btn" onclick="encryptarTexto()"> <img class="lock" src="/imagenes/lock-svgrepo-com.svg" alt=""> Encriptar</button>
+            <button class="botones" id="decrypt-btn" onclick="desencryptarTexto()"><img class="lock" src="/imagenes/open-lock.svg" alt="">  Desencriptar</button>
+            <button class="botones" id="copy"> <img class="lock" src="imagenes/copy-document-svgrepo-com.svg" alt="">  Copiar</button>
         </div>
     </main>
-<footer id="piesDePagina">
+<!-- <footer id="piesDePagina">
     Created By: Willian
-</footer>
+</footer> -->
 
 </body>
 <script src="index.js"></script>
